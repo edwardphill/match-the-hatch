@@ -1,1 +1,1 @@
-alert("this page is linked");
+alert("testing");
