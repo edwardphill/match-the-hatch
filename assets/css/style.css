@@ -1,5 +1,5 @@
 body {
-    background-image: url("assets/images/background.jpg");
+    background-image: url(/assets/images/background.jpg);
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 }
 
 img {
-    height: 50px;
+    height: 80px;
     width: auto;
     border: black solid 1px;
 }
