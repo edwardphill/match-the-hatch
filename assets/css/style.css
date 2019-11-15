@@ -1,7 +1,89 @@
-p {
-    color: orangered;
+body {
+    background-image: url("assets/images/background.jpg");
 }
 
 h1 {
-    background: paleturquoise;
+    color: white;
+    background: darkseagreen;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    margin: 5px;
+}
+
+img {
+    height: 50px;
+    width: auto;
+    border: black solid 1px;
+}
+
+.p {
+    margin: 5px;
+}
+
+.container {
+    margin: 5px;
+}
+
+.content {
+    color: green;
+    background-color: aqua;
+    margin: 5px;
+    width: 40%;
+}
+
+.box {
+    height: 50px;
+    background-color: lightgreen;
+    width: 30%;
+    margin: 5px;
+    width: 20%;
+    margin: 5px;
+}
+
+.box2 {
+    height: 50px;
+    background-color: darkgreen;
+    width: 30%;
+    margin: 5px;
+    width: 20%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.scoreboard {
+    height: 100px;
+    width: 140px;
+    background-color: lightblue;
+    margin: 5px;
+    font: x-large;
+    float: left;
+}
+
+.winsandlosses {
+    height: 100px;
+    width: 70px;
+    background-color: lightblue;
+    margin: 5px;
+    float: left;
+    display: block;
+}
+
+.li {
+    float: left;
+    padding: 0;
+    margin: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flies {
+    width: 40%;
 }

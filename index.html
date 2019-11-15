@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>jQuery Game</title>
-    <script src="/assets/javascript/game.js"></script>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
@@ -12,62 +15,55 @@
 
       <div class="content">
         <div class="p">
-          <p>You will be given a random number at the start of the game.</p>
+          You will be given a random number at the start of the game.
         </div>
 
         <div class="p">
-          <p>
-            There are four flies below. By clicking on a fly you will add a
-            specific amount of points to your score.
-          </p>
+          There are four flies below. By clicking on a fly you will add a
+          specific amount of points to your score.
         </div>
 
         <div class="p">
-          <p>
-            You win by mtaching your total score to the random number, you lose
-            if your score goes above the random number.
-          </p>
+          You win by mtaching your total score to the random number, you lose if
+          your score goes above the random number.
         </div>
 
         <div class="p">
-          <p>
-            The value of each fly is hidden from you until you click on it.
-          </p>
+          The value of each fly is hidden from you until you click on it.
         </div>
         <div class="p">
-          <p>
-            Each time the game starts, the game will change the value of each
-            fly.
-          </p>
+          Each time the game starts, the game will change the value of each fly.
         </div>
       </div>
 
-      <div class="box"></div>
-      <div class="scoreboard">
-        <div class="p"><p>Wins:</p></div>
-        <div class="p"><p>Losses</p></div>
+      <div class="scores clearfix">
+        <div class="scoreboard p clearfix">
+          39
+        </div>
+
+        <div class="winsandlosses p clearfix">
+          Wins: <br />
+          Losses:
+        </div>
       </div>
-    </div>
+      <br />
+      <div class="flies p clearfix">
+        <ul class="li clearfix">
+          <img src="assets/images/ehc.jpg" alt="Elk Hair Caddis" />
+        </ul>
+        <ul class="li clearfix">
+          <img src="assets/images/wb.jpg" alt="Wooly Buggers" />
+        </ul>
+        <ul class="li clearfix">
+          <img src="assets/images/pt.png" alt="Pheasant Tail" />
+        </ul>
+        <ul class="li clearfix">
+          <img src="assets/images/bwo.jpg" alt="Blue Winged Olivel" />
+        </ul>
+      </div>
 
-    <div class="flies">
-      <ul class="li">
-        <p>Elk Hair Caddis</p>
-      </ul>
-      <ul class="li">
-        <p>Wooly Bugger</p>
-      </ul>
-      <ul class="li">
-        <p>Pheasant Tail</p>
-      </ul>
-      <ul class="li">
-        <p>
-          Blue Winged Olive
-        </p>
-      </ul>
-    </div>
-
-    <div class="box">
-      <div class="status"><p>Your total score</p></div>
+      <div class="score p box2">Your total score</div>
+      <div class="livescore box2"></div>
     </div>
   </body>
 </html>
