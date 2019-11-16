@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>jQuery Game</title>
-    <script src="assets/javascript/game.js"></script>
+    <title>jQuery Game - Columbia University Coding Bootcamp Week 4</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -36,34 +35,45 @@
         </div>
       </div>
 
-      <div class="scores clearfix">
+      <div class="clearfix">
         <div class="scoreboard p clearfix">
-          39
+          <p id="score"></p>
         </div>
 
-        <div class="winsandlosses p clearfix">
-          Wins: <br />
+        <div class="wls p clearfix">
+          Wins:
+          <p id="wins"></p>
+          <br />
+
+          <p></p>
           Losses:
+          <p id="losses"></p>
         </div>
       </div>
       <br />
       <div class="flies p clearfix">
-        <ul class="li clearfix">
-          <img src="assets/images/ehc.jpg" alt="Elk Hair Caddis" />
+        <ul class="li clearfix" id="elkHairCaddis">
+          <img src="assets/css/images/ehc.jpg" alt="Elk Hair Caddis" />
         </ul>
-        <ul class="li clearfix">
-          <img src="assets/images/wb.jpg" alt="Wooly Buggers" />
+        <ul class="li clearfix" id="woolyBugger">
+          <img src="assets/css/images/wb.jpg" alt="Wooly Buggers" />
         </ul>
-        <ul class="li clearfix">
-          <img src="assets/images/pt.png" alt="Pheasant Tail" />
+        <ul class="li clearfix" id="blueWingedOlive">
+          <img src="assets/css/images/bwo.jpg" alt="Blue Winged Olivel" />
         </ul>
-        <ul class="li clearfix">
-          <img src="assets/images/bwo.jpg" alt="Blue Winged Olivel" />
+        <ul class="li clearfix" id="pheasantTail">
+          <img src="assets/css/images/pt.png" alt="Pheasant Tail" />
         </ul>
       </div>
 
       <div class="score p box2">Your total score</div>
-      <div class="livescore box2"></div>
+      <div class="livescore box2"><p id="totalScore"></p></div>
     </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <script src="assets/javascript/game.js"></script>
   </body>
 </html>

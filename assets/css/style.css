@@ -1,5 +1,6 @@
 body {
-    background-image: url(/assets/images/background.jpg);
+    background-image: url(images/background.jpg);
+    /* images folder not in CSs folder*/
 }
 
 h1 {
@@ -11,6 +12,8 @@ h1 {
     align-content: center;
     margin: 5px;
 }
+
+#score {}
 
 img {
     height: 80px;
@@ -27,7 +30,7 @@ img {
 }
 
 .content {
-    color: green;
+    color: gree;
     background-color: aqua;
     margin: 5px;
     width: 40%;
@@ -43,8 +46,8 @@ img {
 }
 
 .box2 {
-    height: 50px;
-    background-color: darkgreen;
+    height: auto;
+    background-color: lightseagreen;
     width: 30%;
     margin: 5px;
     width: 20%;
@@ -63,7 +66,7 @@ img {
     float: left;
 }
 
-.winsandlosses {
+.wls {
     height: 100px;
     width: 70px;
     background-color: lightblue;
@@ -86,4 +89,8 @@ img {
 
 .flies {
     width: 40%;
+}
+
+.livescore {
+    height: 100px;
 }
