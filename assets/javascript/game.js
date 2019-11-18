@@ -1,17 +1,16 @@
 // generate a random number to be matched
 
-var randomNumber = Math.floor(Math.random() * 100 + 1);
+var targetNumber = Math.floor(Math.random() * 100 + 1);
 var caddis = Math.floor(Math.random() * 10 + 1);
 var olive = Math.floor(Math.random() * 10 + 1);
 var wooly = Math.floor(Math.random() * 10 + 1);
 var tail = Math.floor(Math.random() * 10 + 1);
 var wins;
 var losses;
-var totalScore;
-
+var totalScore = 0;
 // display that random number to <div class="scoreboard..."></div> (push)
 
-$("#score").html(randomNumber);
+$("#score").html(targetNumber);
 
 // display wins to <id="wins">
 
@@ -39,35 +38,54 @@ console.log(tail);
 
 // if click fly 1 add value to total score, add event listener click()
 
-// if I click elkhaircaddis, add the caddis value to id=totalScore
-
+/* $("#elkHairCaddis").on("click", function() {
+  $("#totalScore").html(caddis);
+});
+*/
 // provide with funtion to increment score to .click()
 
-/*function increaseScore() {
-    if (click)
-}*/
-
 $("#elkHairCaddis").on("click", function() {
-  $("#totalScore").html(caddis);
-  console.log("click");
+  totalScore += caddis;
+  $("#totalScore").html(totalScore + caddis);
+  console.log(totalScore + caddis);
 });
+
+// save that score
+// then add the next click value to the value of the saved score
+// add the sum of all clicks to the totalScore id
 
 // if you click fly 2 add value to total score, add event listener click()
 
 $("#blueWingedOlive").on("click", function() {
   $("#totalScore").html(olive);
-  console.log("click");
+});
+
+$("#blueWingedOlive").on("click", function() {
+  totalScore += caddis;
+  $("#totalScore").html(totalScore + olive);
+  console.log(totalScore + olive);
 });
 
 // if click fly 3 add value to total score, add event listener click()
 $("#woolyBugger").on("click", function() {
   $("#totalScore").html(wooly);
-  console.log("click");
 });
+
+$("#woolyBugger").on("click", function() {
+  totalScore += caddis;
+  $("#totalScore").html(totalScore + wooly);
+  console.log(totalScore + wooly);
+});
+
 // if click fly 4 add value to total score, add event listener click()
 $("#pheasantTail").on("click", function() {
   $("#totalScore").html(tail);
-  console.log("click");
+});
+
+$("#pheasantTail").on("click", function() {
+  totalScore += caddis;
+  $("#totalScore").html(totalScore + tail);
+  console.log(totalScore + tail);
 });
 
 // if score is greater than random number, you lose, write loss to Losses <p>
@@ -79,3 +97,13 @@ $("#pheasantTail").on("click", function() {
 // if score = random number, you win, write win to Win <p>
 
 // if win OR lose, randomize number again and randomize flies
+
+if (totalScore == targetNumber) {
+  alert("you caught the fish using the right fly combination!");
+  document.location.reload();
+}
+
+if (totalScore > targetNumber) {
+  alert("Aw, shucks. You spooked the fish! Try again on the next fish.");
+  document.location.reload();
+}
