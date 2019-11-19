@@ -93,4 +93,6 @@ if (totalScore == targetNumber) {
 } /* else (totalScore > targetNumber) {
 console.log("Aw, shucks. You spooked the fish! Try again on the next fish.");
 $("#losses").html(losses + 1);}
+
+*/
 // document.location.reload()
