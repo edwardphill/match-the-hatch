@@ -13,19 +13,18 @@ function gamePlay() {
   if (totalScore === targetNumber) {
     wins++;
     $("#wins").text(wins);
-    $("#score").text("You caught the fish using the right fly combination!");
-    targetNumber = Math.floor(Math.random() * 100 + 1);
+    alert("You matched the hatch and caught the fish!");
+    $("#score").text(Math.floor(Math.random() * 100 + 1));
     totalScore = 0;
-    // document.location.reload();
+
+    // caddis / all vars reset, total score = 0
   } else if (totalScore > targetNumber) {
     losses++;
     $("#losses").text(losses);
-    $("#score").text("Ah, dang! You spooked the fish.");
-    targetNumber = Math.floor(Math.random() * 100 + 1);
+    alert("Ah, dang! You spooked the fish with the wrong fly combination.");
+    $("#score").text(Math.floor(Math.random() * 100 + 1));
+
     totalScore = 0;
-    // document.location.reload();
-  } else {
-    console.log(totalScore);
   }
 }
 
@@ -76,7 +75,7 @@ $("#elkHairCaddis").on("click", function() {
 $("#elkHairCaddis").on("click", function() {
   totalScore += caddis;
   $("#totalScore").html(totalScore);
-  console.log(totalScore + caddis);
+  console.log(totalScore);
   gamePlay();
 });
 
@@ -89,7 +88,7 @@ $("#elkHairCaddis").on("click", function() {
 $("#blueWingedOlive").on("click", function() {
   totalScore += olive;
   $("#totalScore").html(totalScore);
-  console.log(totalScore + olive);
+  console.log(totalScore);
   gamePlay();
 });
 
@@ -97,7 +96,7 @@ $("#blueWingedOlive").on("click", function() {
 $("#woolyBugger").on("click", function() {
   totalScore += wooly;
   $("#totalScore").html(totalScore);
-  console.log(totalScore + wooly);
+  console.log(totalScore);
   gamePlay();
 });
 
@@ -105,7 +104,7 @@ $("#woolyBugger").on("click", function() {
 $("#pheasantTail").on("click", function() {
   totalScore += tail;
   $("#totalScore").html(totalScore);
-  console.log(totalScore + tail);
+  console.log(totalScore);
   gamePlay();
 });
 
