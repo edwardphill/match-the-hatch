@@ -8,6 +8,27 @@ var tail = Math.floor(Math.random() * 10 + 1);
 var wins = 0;
 var losses = 0;
 var totalScore = 0;
+
+function gamePlay() {
+  if (totalScore === targetNumber) {
+    wins++;
+    $("#wins").text(wins);
+    $("#score").text("You caught the fish using the right fly combination!");
+    targetNumber = Math.floor(Math.random() * 100 + 1);
+    totalScore = 0;
+    // document.location.reload();
+  } else if (totalScore > targetNumber) {
+    losses++;
+    $("#losses").text(losses);
+    $("#score").text("Ah, dang! You spooked the fish.");
+    targetNumber = Math.floor(Math.random() * 100 + 1);
+    totalScore = 0;
+    // document.location.reload();
+  } else {
+    console.log(totalScore);
+  }
+}
+
 // display that random number to <div class="scoreboard..."></div> (push)
 
 $("#score").html(targetNumber);
@@ -44,10 +65,19 @@ console.log("tail", tail);
 */
 // provide with funtion to increment score to .click()
 
+/*
 $("#elkHairCaddis").on("click", function() {
-  totalScore + caddis;
   $("#totalScore").html(totalScore + caddis);
   console.log(totalScore + caddis);
+});
+
+*/
+
+$("#elkHairCaddis").on("click", function() {
+  totalScore += caddis;
+  $("#totalScore").html(totalScore);
+  console.log(totalScore + caddis);
+  gamePlay();
 });
 
 // save that score
@@ -58,22 +88,25 @@ $("#elkHairCaddis").on("click", function() {
 
 $("#blueWingedOlive").on("click", function() {
   totalScore += olive;
-  $("#totalScore").html(totalScore + olive);
+  $("#totalScore").html(totalScore);
   console.log(totalScore + olive);
+  gamePlay();
 });
 
 // if click fly 3 add value to total score, add event listener click()
 $("#woolyBugger").on("click", function() {
   totalScore += wooly;
-  $("#totalScore").html(totalScore + wooly);
+  $("#totalScore").html(totalScore);
   console.log(totalScore + wooly);
+  gamePlay();
 });
 
 // if click fly 4 add value to total score, add event listener click()
 $("#pheasantTail").on("click", function() {
   totalScore += tail;
-  $("#totalScore").html(totalScore + tail);
+  $("#totalScore").html(totalScore);
   console.log(totalScore + tail);
+  gamePlay();
 });
 
 // if score is greater than random number, you lose, write loss to Losses <p>
@@ -85,14 +118,10 @@ $("#pheasantTail").on("click", function() {
 // if score = random number, you win, write win to Win <p>
 
 // if win OR lose, randomize number again and randomize flies
-/*
-if (totalScore == targetNumber) {
-  console.log("you caught the fish using the right fly combination!");
-  $("#wins").html(wins + 1);
-  // document.location.reload();
-} /* else (totalScore > targetNumber) {
-console.log("Aw, shucks. You spooked the fish! Try again on the next fish.");
-$("#losses").html(losses + 1);}
 
-*/
+// document.location.reload();
+// else (totalScore > targetNumber) {
+//console.log("Aw, shucks. You spooked the fish! Try again on the next fish.");
+//$("#losses").html(losses + 1);}
+
 // document.location.reload()
