@@ -14,16 +14,25 @@ function gamePlay() {
     wins++;
     $("#wins").text(wins);
     alert("You matched the hatch and caught the fish!");
-    $("#score").text(Math.floor(Math.random() * 100 + 1));
+    targetNumber = Math.floor(Math.random() * 100 + 1);
+    $("#score").text(targetNumber);
     totalScore = 0;
+    $("#totalScore").text(totalScore);
 
     // caddis / all vars reset, total score = 0
   } else if (totalScore > targetNumber) {
     losses++;
     $("#losses").text(losses);
     alert("Ah, dang! You spooked the fish with the wrong fly combination.");
-    $("#score").text(Math.floor(Math.random() * 100 + 1));
 
+    // reset game function
+    targetNumber = Math.floor(Math.random() * 100 + 1);
+    $("#score").text(targetNumber);
+    totalScore = 0;
+    $("#totalScore").text(totalScore);
+    ////
+
+    // targetNumber = Math.loor(Math.random() * 100 + 1);
     totalScore = 0;
   }
 }
