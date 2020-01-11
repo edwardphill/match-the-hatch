@@ -9,95 +9,69 @@
   </head>
 
   <body>
-    <div id="container">
-      <div class="topnav">
-        <a class="active">
-          <img src="assets/css/images/logo.png" alt="Fisher Guiding" />FISHER
-          GUIDING</a
-        >
-
-        <a
-          href="https://www.fisherguiding.com/how-to-book-a-fishing-trip"
-          target="_blank"
-          >Explore</a
-        >
-        <a
-          href="https://www.fisherguiding.com/list-trips-with-fisher"
-          target="_blank"
-          >Sign Up</a
-        >
+    <div class="content">
+      <div class="h2">
+        Match the Hatch.
+      </div>
+      <div class="h3">
+        Generate the <span class="greenText">right number</span> to 'match the
+        hatch' and catch the fish.
       </div>
 
-      <section>
-        <div class="hero">
-          <div class="hero-text">
-            Match the Hatch!
-          </div>
-        </div>
-      </section>
-
-      <div class="content">
-        <div class="h2">
-          Generate the right number to 'match the hatch' and catch the fish!
-        </div>
-        <hr />
-
-        <div class="p">
-          You will be given a random number (the fish) at the start of the game.
-        </div>
-
-        <div class="p">
-          There are four flies below. By clicking on a fly you will "make a
-          cast" and add a specific amount of points to your score.
-        </div>
-
-        <div class="p">
-          You win by matching your total score to the random number (and using
-          the right fly combination!), you lose if your score goes above the
-          random number.
-        </div>
-
-        <div class="p">
-          The value of each fly is hidden from you until you click on it.
-        </div>
-        <div class="p">
-          Each time the game starts, the game will change the value of each fly.
-        </div>
-      </div>
-      <div class="scoreContainer">
-        <div class="clearfix">
-          <div class="scoreboard p clearfix">
-            <p id="score"></p>
-          </div>
-
-          <div class="wls p clearfix">
-            Wins:
-            <p id="wins"></p>
-            Losses:
-            <p id="losses"></p>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div class="flies p clearfix">
-        <ul class="li " id="elkHairCaddis">
-          <img src="assets/css/images/ehc.jpg" alt="Elk Hair Caddis" />
-        </ul>
-        <ul class="li " id="woolyBugger">
-          <img src="assets/css/images/wb.jpg" alt="Wooly Buggers" />
-        </ul>
-        <ul class="li " id="blueWingedOlive">
-          <img src="assets/css/images/bwo.jpg" alt="Blue Winged Olivel" />
-        </ul>
-        <ul class="li " id="pheasantTail">
-          <img src="assets/css/images/pt.png" alt="Pheasant Tail" />
-        </ul>
+      <div class="p">
+        You will be given a <span class="greenText">random number</span> (the
+        fish) at the start of the game.
       </div>
 
-      <div class="yourScore">
-        <div class="score p box2 h2">Your total score</div>
-        <div class="livescore box2 h2"><p id="totalScore"></p></div>
+      <div class="p">
+        There are <span class="greenText">four flies</span> below. By clicking
+        on a fly you will "make a cast" and add a specific amount of points to
+        your score.
       </div>
+
+      <div class="p">
+        You win by matching your total score to the random number (and using the
+        right fly combination!), you lose if your score goes above the random
+        number.
+      </div>
+
+      <div class="p">
+        The value of each fly is hidden from you until you click on it.
+      </div>
+      <div class="p">
+        Each time the game starts, the game will change the value of each fly.
+      </div>
+    </div>
+    <div class="scoreContainer">
+      <div class="scoreboard p">
+        <p id="score"></p>
+      </div>
+
+      <div class="wls p ">
+        Wins:
+        <p id="wins"></p>
+        Losses:
+        <p id="losses"></p>
+      </div>
+    </div>
+
+    <div class="flies p">
+      <ul class="li " id="elkHairCaddis">
+        <img src="assets/css/images/caddis.jpg" alt="Elk Hair Caddis" />
+      </ul>
+      <ul class="li " id="woolyBugger">
+        <img src="assets/css/images/wooly.jpg" alt="Wooly Buggers" />
+      </ul>
+      <ul class="li " id="blueWingedOlive">
+        <img src="assets/css/images/nymph1.jpg" alt="Blue Winged Olivel" />
+      </ul>
+      <ul class="li " id="pheasantTail">
+        <img src="assets/css/images/18S3L5SF.jpg" alt="Pheasant Tail" />
+      </ul>
+    </div>
+    <div class="content">
+      <div class="score p box2 h2">Your total score</div>
+      <div class="livescore box2 h2"><p id="totalScore"></p></div>
     </div>
 
     <script
