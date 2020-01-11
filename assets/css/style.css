@@ -76,27 +76,41 @@ img {
   width: 22%;
   background-color: #202124;
   border: 2px solid #98ECC3;
-  margin: 4px;
   margin-left: 5%;
   font: x-large;
-  display: inline-block;
-  padding: 5px;
   text-align: center;
-  align-content: center;
-  justify-content: center;
+  display: block;
+  padding: 30px;
 }
 
 .wls {
   height: 120px;
   width: 22%;
   background-color: #202124;
-  margin: 4px;
   justify-content: center;
-  display: inline-block;
   border: 2px solid #98ECC3;
-  padding: 5px;
   text-align: center;
-  align-content: center;
+  display: block;
+  padding: 30px;
+}
+
+.yourScore {
+  height: 120px;
+  width: 22%;
+  background-color: #202124;
+  justify-content: center;
+  border: 2px solid #98ECC3;
+  text-align: center;
+  display: block;
+  margin: 15px;
+  padding: 30px;
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .li {
@@ -106,11 +120,11 @@ img {
 }
 
 .flies {
-  margin-left: 25%;
-  width: 50vw;
   padding: 5px;
+  display: flex;
   text-align: center;
   align-content: center;
+  justify-content: space-around;
 }
 
 .livescore {
@@ -118,8 +132,11 @@ img {
   margin-left: 25%;
   background-color: #202124;
   width: 50%;
-  border: 2px solid #98ECC3;
   text-align: center;
+}
+
+.scoreContainer {
+  display: inherit;
 }
 
 .clearfix::after {
@@ -128,8 +145,32 @@ img {
   display: table;
 }
 
+@media screen and (max-width: 10000px) {
+  .content {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 500px;
+  }
+}
+
 @media screen and (max-width: 640px) {
-  #container {
-    width: 400px;
+  .content {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .content {
+    width: 250px;
   }
 }
