@@ -1,6 +1,6 @@
 // generate a random number to be matched
 
-var targetNumber = Math.floor(Math.random() * 100 + 1);
+var targetNumber = Math.floor(Math.random() * 70 + 1);
 var caddis = Math.floor(Math.random() * 10 + 1);
 var olive = Math.floor(Math.random() * 10 + 1);
 var wooly = Math.floor(Math.random() * 10 + 1);
