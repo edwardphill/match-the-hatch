@@ -11,11 +11,11 @@
   <body>
     <div class="content">
       <div class="h2">
-        Match the Hatch.
+        Match the Hatch!
       </div>
       <div class="h3">
         Generate the <span class="greenText">right number</span> to 'match the
-        hatch' and catch the fish.
+        hatch' and catch the fish!
       </div>
 
       <div class="p">
@@ -24,7 +24,7 @@
       </div>
 
       <div class="p">
-        There are <span class="greenText">four flies</span> below. By clicking
+        There are <span class="greenText"></span>four flies below. By clicking
         on a fly you will "make a cast" and add a specific amount of points to
         your score.
       </div>
@@ -43,19 +43,21 @@
       </div>
     </div>
     <div class="scoreContainer">
-      <div class="scoreboard p">
-        <p id="score"></p>
-      </div>
+      <div class="clearfix">
+        <div class="scoreboard p clearfix">
+          <p id="score"></p>
+        </div>
 
-      <div class="wls p ">
-        Wins:
-        <p id="wins"></p>
-        Losses:
-        <p id="losses"></p>
+        <div class="wls p clearfix">
+          Wins:
+          <p id="wins"></p>
+          Losses:
+          <p id="losses"></p>
+        </div>
       </div>
     </div>
-
-    <div class="flies p">
+    <br />
+    <div class="flies p clearfix">
       <ul class="li " id="elkHairCaddis">
         <img src="assets/css/images/caddis.jpg" alt="Elk Hair Caddis" />
       </ul>
@@ -70,10 +72,11 @@
       </ul>
     </div>
     <div class="content">
-      <div class="score p box2 h2">Your total score</div>
-      <div class="livescore box2 h2"><p id="totalScore"></p></div>
+      <div class="yourScore">
+        <div class="score p box2 h2">Your total score</div>
+        <div class="livescore box2 h2"><p id="totalScore"></p></div>
+      </div>
     </div>
-
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"

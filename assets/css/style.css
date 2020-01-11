@@ -53,6 +53,7 @@ body {
 img {
   height: 70px;
   width: auto;
+  border-radius: 50%;
 }
 
 #container {
@@ -79,7 +80,6 @@ img {
   margin-left: 5%;
   font: x-large;
   display: inline-block;
-  border-radius: 5px;
   padding: 5px;
   text-align: center;
   align-content: center;
@@ -94,7 +94,6 @@ img {
   justify-content: center;
   display: inline-block;
   border: 2px solid #98ECC3;
-  border-radius: 5px;
   padding: 5px;
   text-align: center;
   align-content: center;
@@ -119,9 +118,14 @@ img {
   margin-left: 25%;
   background-color: #202124;
   width: 50%;
-  border-radius: 5px;
   border: 2px solid #98ECC3;
   text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media screen and (max-width: 640px) {
