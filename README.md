@@ -1,7 +1,7 @@
 # Match the hatch guessing app
 
 # App Overview
- [GIF of match the hatch](https://media.giphy.com/media/U1V5C5DFdl3CrKFsp0/giphy.gif)
+ ![GIF of match the hatch](https://media.giphy.com/media/U1V5C5DFdl3CrKFsp0/giphy.gif)
 
 # How To Use
 - Go to [Match The Hatch] (https://github.com/edwardphill/unit-4-game) 
