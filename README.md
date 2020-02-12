@@ -1,4 +1,4 @@
-# Match the hatch guessing app
+# Match The Hatch Guessing App
 
 # App Overview
  ![GIF of match the hatch](https://media.giphy.com/media/U1V5C5DFdl3CrKFsp0/giphy.gif)
