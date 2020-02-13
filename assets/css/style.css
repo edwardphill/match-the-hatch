@@ -103,7 +103,7 @@ img {
   border: 2px solid #98ECC3;
   text-align: center;
   display: block;
-  margin: 15px;
+  margin: 10px 10px;
   padding: 30px;
 }
 
@@ -132,7 +132,6 @@ img {
 
 .livescore {
   height: 100px;
-  margin-left: 25%;
   background-color: #202124;
   width: 50%;
   text-align: center;
